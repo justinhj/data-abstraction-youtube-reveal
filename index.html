@@ -8,7 +8,8 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="assets/custom.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +17,110 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+              <section data-markdown>
+                  <textarea data-template>
+                  ### Questions
+                  1. Scala Variance <!-- .element: class="fragment" -->
+                      + What is with the + and - symbols on type parameters?
+                      + Do you need to know about them?
+                      + How do library authors use them to make their libraries more usable?
+                  2. Variance under Inheritance <!-- .element: class="fragment" -->
+                      + How does Java deal with inheritance of generic classes and arrays?
+                      + What language design decisions were made to get there?
+                      + Is there a relationship between Java's solution and Scala's?
+                  3. Inheritance and hierarchy as a Data Abstraction <!-- .element: class="fragment" -->
+                      + How should we think about and use inheritance?
+                      + What is subtyping?
+                  4. Data Abstraction <!-- .element: class="fragment" -->
+                      + What types of abstraction are there?
+                      + What is Data Abstraction?
+                  </textarea>
+
+
+              </section>
+
+                  <section data-markdown data-transition="slide">
+                      <textarea data-template>
+                        #### Scala variances
+
+                        <img src="./assets/1_scala_variances.png" width="60%"/>
+                      </textarea>
+                  </section>
+
+                <section data-markdown>
+                  <script type="text/template">
+                    #### Items coming hence
+                    - Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
+                    - Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
+                  </script>
+                </section>
+
+              <section data-markdown>
+                  <textarea data-template>
+                    ```rust [1|2|3|4-7]
+                        #[launch]
+                        fn rocket() -> _ {
+                            let counter = Counter::default();
+
+                            rocket::build()
+                                .mount("/", routes![index,info,delay])
+                                .attach(counter)
+                        }
+                    ```
+                  </textarea>
+              </section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+              <section>
+              </section>
 			</div>
 		</div>
 
@@ -30,8 +133,17 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
+  				hash: true,
+                width: 2048,
+                height: 1080,
 
+                // Factor of the display size that should remain empty around
+                // the content
+                margin: 0.04,
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.2,
+                maxScale: 2.0,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
