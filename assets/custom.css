@@ -1,3 +1,29 @@
-.reveal section img {
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
+/*********************************************
+ * Custom link colours 
+ *********************************************/
+.reveal a {
+  color: royalblue;
 }
+
+.reveal a:hover {
+  color: mediumvioletred;
+}
+
+/* Flex layout */
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+
+/* Custom shadow */
+.reveal section img {
+    box-shadow: 
+        rgb(0 0 0 / 9%) 0 2px 1px, 
+        rgb(0 0 0 / 9%) 0 4px 2px,
+        rgb(0 0 0 / 9%) 0 8px 4px, 
+        rgb(0 0 0 / 9%) 0 16px 8px,
+        rgb(0 0 0 / 9%) 0 32px 16px; 
+}
+

@@ -18,19 +18,19 @@
 		<div class="reveal">
 			<div class="slides">
 
-              <section data-markdown>
+              <section data-markdown id="questions">
                   <textarea data-template>
                   ### Questions
                   1. Scala Variance <!-- .element: class="fragment" -->
-                      + What is with the + and - symbols on type parameters?
+                      + What is with the + and - symbols on <a href="#/scala-variances">type parameters</a>? 	
                       + Do you need to know about them?
                       + How do library authors use them to make their libraries more usable?
                   2. Variance under Inheritance <!-- .element: class="fragment" -->
                       + How does Java deal with inheritance of generic classes and arrays?
-                      + What language design decisions were made to get there?
+                      + What <a href="#/java-specification">language</a> design decisions were made to get there?
                       + Is there a relationship between Java's solution and Scala's?
                   3. Inheritance and hierarchy as a Data Abstraction <!-- .element: class="fragment" -->
-                      + How should we think about and use inheritance?
+                      + How should we think about and use <a href="#/data-abstraction-and-inheritance">inheritance</a>?
                       + What is subtyping?
                   4. Data Abstraction <!-- .element: class="fragment" -->
                       + What types of abstraction are there?
@@ -39,14 +39,6 @@
 
 
               </section>
-
-                  <section data-markdown data-transition="slide">
-                      <textarea data-template>
-                        #### Scala variances
-
-                        <img src="./assets/1_scala_variances.png" width="60%"/>
-                      </textarea>
-                  </section>
 
                 <section data-markdown>
                   <script type="text/template">
@@ -71,56 +63,36 @@
                   </textarea>
               </section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+              <section data-markdown data-transition="slide" id="scala-variances">
+                  <textarea data-template>
+                    #### Scala variances
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-              <section>
+                    <img src="./assets/1_scala_variances.png" width="60%"/>
+                    <p><a href="#/questions/0">Back</a></p>
+                  </textarea>
               </section>
+
+              <section data-markdown data-transition="slide" id="data-abstraction-and-inheritance">
+                  <textarea data-template>
+                    #### Data Abstraction and Inheritance
+                    <div class="r-stack">
+                        <img class="fragment" src="./assets/3_data_abstraction_and_hierarchy.png" width="40%"/>
+                        <img class="fragment" src="./assets/barbara_liskov.png" width="20%"/>
+                    </div>
+                    <a href="#/questions/2">Back</a>
+                  </textarea>
+              </section>
+
+              <section data-markdown data-transition="slide" id="java-specification">
+                  <textarea data-template>
+                    #### Java Language Specification
+
+                    <img src="./assets/2_java_specification.png" width="60%"/>
+                    <a href="#/questions/1">Back</a>
+                  </textarea>
+              </section>
+
 			</div>
 		</div>
 
