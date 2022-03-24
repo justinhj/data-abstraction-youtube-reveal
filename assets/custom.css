@@ -13,8 +13,11 @@
 .container{
     display: flex;
 }
-.col{
-    flex: 1;
+.col-photo{
+    flex: 2;
+}
+.col-content{
+    flex: 5;
 }
 
 /* Custom shadow */
@@ -27,3 +30,24 @@
         rgb(0 0 0 / 9%) 0 32px 16px; 
 }
 
+/* Media layout */
+
+.media {
+  display: flex;
+  align-items: flex-start;
+  background: lightgrey; /* #F6F3EB; */
+  padding: 1em;
+  border-radius: 3px;
+  max-width: 29em;
+}
+.media-object {
+  margin-right: 3em;
+}
+.media-body {
+  text-align: left;  
+  padding: 1em;
+  flex: 1;
+}
+.media-heading {
+  margin: 0 0 0.5em;
+}
