@@ -12,14 +12,30 @@
 /* Flex layout */
 .container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 .col-photo{
     order: 2;
     flex: 2;
 }
-.col-content{
+
+.col-content-1{
+    flex: 1;
+}
+.col-content-2{
+    flex: 2;
+}
+.col-content-3{
+    flex: 3;
+}
+.col-content-4{
+    flex: 4;
+}
+.col-content-5{
     flex: 5;
+}
+.col-content-6{
+    flex: 6;
 }
 
 /* Custom shadow */

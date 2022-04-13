@@ -1,0 +1,27 @@
+variance 
+
+software crisis any examples and links (70s)
+
+more about structured programming from dijkstra and wirth 
+
+clu has gc
+
+can you do contravariant things with java arrays?
+what is the deal with arrays of primitives 
+
+talk plan 
+
+five minutes on the questions that led to this ending with Liskov and data abstraction, you need a slide with data abstraction and inheritance, and then one with some thing about CLU
+
+maybe change the order here as we need to talk about the Venus operating system
+
+next structured programming and design, Dykstra, Niklaus Wirth, stepwise refinement… Software crisis. slides with good quotes maybe papers from each
+
+next control abstraction and functional abstraction need slide with assembly language for procedure calls and conditional statements or loops,
+
+introduce Parnas and information hiding encapsulation, let’s golf career, FORTRAN and Venus,
+petitions and partitions and teens
+
+CLU language and the design, talk about the sources and the features of clue ending with Clijsters, can talk about the solutions to problems with data abstraction
+
+giraffe at this video you need conclusions about CLU and introduction for inheritance and maybe you can talk about Smalltalk and the West Coast

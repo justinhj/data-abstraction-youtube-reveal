@@ -44,54 +44,97 @@ Beige graduation not bad but wrong colour
 		<div class="reveal">
 			<div class="slides">
 
-              <section data-markdown id="questions">
-                  <textarea data-template>
-                  ### Questions
-                  1. Scala Variance <!-- .element: class="fragment" -->
-                      + What is with the + and - symbols on <a href="#/scala-variances">type parameters</a>? 	
-                      + Do you need to know about them?
-                      + How do library authors use them to make their libraries more usable?
-                  2. Variance under Inheritance <!-- .element: class="fragment" -->
-                      + How does Java deal with inheritance of generic classes and arrays?
-                      + What <a href="#/java-specification">language</a> design decisions were made to get there?
-                      + Is there a relationship between Java's solution and Scala's?
-                  3. Inheritance and hierarchy as a Data Abstraction <!-- .element: class="fragment" -->
-                      + How should we think about and use <a href="#/data-abstraction-and-inheritance">inheritance</a>?
-                      + What is subtyping?
-                  4. Data Abstraction <!-- .element: class="fragment" -->
-                      + What types of abstraction are there?
-                      + What is Data Abstraction?
-                  </textarea>
-
-                      <aside class="notes">
-    Shhh, these are your private notes
-                      </aside>
-
+              <section id="questions-1">
+                  <h2>Scala Variance</h2>
+                  <ul>
+                      <li class="fragment">What are the <b>+</b> and <b>-</b> symbols on <a href="#/scala-variances">type parameters</a>?</li>
+                      <li class="fragment">Do you need to know about them?</li>
+                      <li class="fragment">How do library authors use them to make their <a href="#/zqueue-declaration">libraries</a> more usable?</li>
+                  </ul>
               </section>
 
-                <section>
+              <section id="questions-2">
+                  <h2>Variance under Inheritance</h2>
+                  <ul>
+                      <li class="fragment">How does Java deal with inheritance of generic classes and arrays?</li>
+                      <li class="fragment">What <a href="#/java-specification">language</a> design decisions were made to get there?</li>
+                      <li class="fragment">Is there a relationship between Java's solution and Scala's?</li>
+                  </ul>
+              </section>
 
+              <section id="questions-3">
+                  <h2>Inheritance and hierarchy as a Data Abstraction</h2>
+                  <ul>
+                      <li class="fragment">How do we define subtypes?</li>
+                      <li class="fragment">How should we think about and use <a href="#/data-abstraction-and-inheritance">inheritance</a>?</li>
+                  </ul>
+              </section>
+
+              <section id="questions-4">
+                  <h2>Data Abstraction</h2>
+                  <ul>
+                      <li class="fragment">What types of abstraction are there?</li>
+                      <li class="fragment">Why aren't control and procedural abstractions enough?</li>
+                      <li class="fragment">What do we mean by Abstract Data Types?</li>
+                  </ul>
+              </section>
+
+              <section>
+                  <h1>The Humble Programmer</h1>
+                  <p>E.W.Dijkstra, ACM Turing Lecture, 1972</p>
+              </section>
+
+              <section>
+                  <h1>Notes on Structured Programming</h1>
+                  <p>E.W.Dijkstra, 1969</p>
+              </section>
+
+              <section>
+                  <h1>Turing Award Lecture</h1>
+                  <p>Niklaus Wirth, 1984</p>
+              </section>
+
+              <section >
                     <div class="container">
-
-                            <div class="col-photo">
-                                <img src="./assets/barbara_liskov.png" width="300"/>
+                            <div class="col-content-2">
                             </div>
 
-                            <div class="col-content">
-                                <img src="./assets/3_data_abstraction_and_hierarchy.png"/>
+                            <div class="col-content-4">
+                                "Evidently, programs should be designed according to the same
+principles as electronic circuits, that is, clearly subdivided into
+parts with only a few wires going across the boundaries."
+                            </div>
+
+                            <div class="col-content-2">
+                            </div>
+
+                            <div class="col-content-2">
+                                <img src="assets/niklaus-wirth.jpeg" width=211/>
+                                <p>
+                                Niklaus Wirth
+                                </p>
+                            </div>
+                            <div class="col-content-2">
                             </div>
                     </div>
-                    <a href="#/questions/2">Back</a>
+              </section>
 
-                </section>
+              <section>
+                  <h2>Third none question slide</h2>
+                  <p>Things!</p>
+              </section>
 
+              <section>
+                  <h2>Fourth none question slide</h2>
+                  <p>Things!</p>
+              </section>
 
               <section data-markdown data-transition="slide" id="scala-variances">
                   <textarea data-template>
                     #### Scala variances
 
                     <img src="./assets/1_scala_variances.png" width="60%"/>
-                    <p><a href="#/questions/0">Back</a></p>
+                    <p><a href="#/questions-1/0">Back</a></p>
                   </textarea>
               </section>
 
@@ -103,12 +146,12 @@ Beige graduation not bad but wrong colour
                                 <img src="./assets/barbara_liskov.png" width="300"/>
                             </div>
 
-                            <div class="col-content">
+                            <div class="col-content-5">
                                 <img src="./assets/3_data_abstraction_and_hierarchy.png"/>
                             </div>
                     </div>
 
-                    <a href="#/questions/2">Back</a>
+                    <a href="#/questions-3/2">Back</a>
               </section>
 
               <section data-markdown data-transition="slide" id="java-specification">
@@ -118,12 +161,24 @@ Beige graduation not bad but wrong colour
                     <img src="./assets/2_java_specification.png" width="60%"/>
                     </p>
                     <p>
-                    <a href="#/questions/1">Back</a>
+                    <a href="#/questions-2/1">Back</a>
                     </p>
                   </textarea>
                   
               </section>
 
+              <section data-markdown data-transition="slide" id="zqueue-declaration">
+                  <textarea data-template>
+                    #### Zio's ZQueue declaration
+                    <p>
+                    <img src="./assets/zqueue_declaration.png" width="60%"/>
+                    </p>
+                    <p>
+                    <a href="#/questions-1/3">Back</a>
+                    </p>
+                  </textarea>
+                  
+              </section>
 			</div>
 		</div>
 
