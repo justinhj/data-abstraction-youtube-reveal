@@ -4,6 +4,49 @@
  *   Hakim El Hattab, http://hakim.se
  */
 
+/* Flex layout */
+.container{
+    display: flex;
+    align-items: flex-start;
+}
+.col-photo{
+    order: 2;
+    flex: 2;
+}
+
+.col-content-1{
+    flex: 1;
+}
+.col-content-2{
+    flex: 2;
+}
+.col-content-3{
+    flex: 3;
+}
+.col-content-4{
+    flex: 4;
+}
+.col-content-5{
+    flex: 5;
+}
+.col-content-6{
+    flex: 6;
+}
+
+/* Custom shadow */
+.reveal section img {
+    box-shadow: 
+        rgb(0 0 0 / 9%) 0 2px 1px, 
+        rgb(0 0 0 / 9%) 0 4px 2px,
+        rgb(0 0 0 / 9%) 0 8px 4px, 
+        rgb(0 0 0 / 9%) 0 16px 8px,
+        rgb(0 0 0 / 9%) 0 32px 16px; 
+}
+
+.reveal section h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff;
 }
@@ -21,7 +64,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-main-font-size: 42px;
   --r-main-color: #222;
   --r-block-margin: 20px;
-  --r-heading-margin: 0 0 20px 0;
+  --r-heading-margin: 0 0 20px 40px;
   --r-heading-font: Fjalla One, sans-serif;
   --r-heading-color: #222;
   --r-heading-line-height: 1.2;
@@ -35,9 +78,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #2a76dd;
+  --r-link-color: royalblue;
   --r-link-color-dark: #1a53a1;
-  --r-link-color-hover: #6ca0e8;
+  --r-link-color-hover: mediumvioletred;
   --r-selection-background-color: #98bdef;
   --r-selection-color: #fff;
 }
