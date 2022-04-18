@@ -59,6 +59,3 @@ abstractions...
 
 
 
-Credits
-
-https://friconix.com/icon/fi-cnsuxl-question-mark/
